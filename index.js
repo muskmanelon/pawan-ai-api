@@ -20,7 +20,7 @@ app.get('/:sentence', (req, res) => {
       "model": "pai-001-light-beta",
       "max_tokens": 100,
       "temperature": 0.7,
-      "prompt": "Generate the linguistic opposite of the following sentence without any additional context or moral interpretation: '" + sentence + "'"
+      "prompt": "Generate the exact linguistic opposite of the following sentence as your answer, without any explanation or justification. '" + sentence + "'"
     })
   };
 
