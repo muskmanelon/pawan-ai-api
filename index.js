@@ -19,7 +19,6 @@ app.get('/:sentence', (req, res) => {
     body: JSON.stringify({
       "model": "pai-001-light-beta",
       "max_tokens": 100,
-      "temperature": 0.7,
       "prompt": "answer with the exact linguistic opposite of the following string (make it funny and quirky) and nothing else, and set it inbetween '+':" + sentence + "'."
     })
   };
