@@ -19,7 +19,7 @@ app.get('/:sentence', (req, res) => {
     body: JSON.stringify({
       "model": "pai-001-light-beta",
       "max_tokens": 100,
-      "prompt": "Provide the exact opposite of the following sentence with '+' signs on both sides:" + sentence
+      "prompt": "Provide the exact opposite of the following string and hightlight it with '+' signs on both sides:" + sentence
     })
   };
 
