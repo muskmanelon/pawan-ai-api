@@ -20,7 +20,7 @@ app.get('/:sentence', (req, res) => {
       "model": "pai-001-light-beta",
       "max_tokens": 100,
       "temperature": 0.7,
-      "prompt": "Generate the exact opposite of the following sentence as your answer. Set the Opposite Sentence in between two '~':'" + sentence + "'."
+      "prompt": "answer with the exact linguistic opposite of the following string (make it funny and quirky) and nothing else, and set it inbetween '+':" + sentence + "'."
     })
   };
 
