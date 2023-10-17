@@ -20,7 +20,7 @@ app.get('/:sentence', (req, res) => {
       "model": "pai-001-light-beta",
       "max_tokens": 100,
       "temperature": 0.7,
-      "prompt": "write the exact opposite of this sentence: '" + sentence + "'"
+      "prompt": "Please provide the exact opposite of the following sentence, without any additional information or context: '" + sentence + "'"
     })
   };
 
