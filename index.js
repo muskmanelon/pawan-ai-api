@@ -19,7 +19,7 @@ app.get('/:sentence', (req, res) => {
     body: JSON.stringify({
       "model": "pai-001-light-beta",
       "max_tokens": 100,
-      "prompt": "Generate a sentence that conveys the opposite meaning of the provided sentence while maintaining grammatical correctness and coherence." + sentence
+      "prompt": "Generate a sentence that conveys the opposite meaning of the provided sentence while maintaining grammatical correctness and coherence (Only output the generated sentence and dont give any explanation)." + sentence
     })
   };
 
