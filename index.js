@@ -19,7 +19,7 @@ app.get('/:sentence', (req, res) => {
     body: JSON.stringify({
       "model": "pai-001-light-beta",
       "max_tokens": 100,
-      "prompt": "Generate the linguistic opposite sentence of the following sentence, and higlight it using two '~' (left and right)" + sentence
+      "prompt": "Generate the linguistic opposite sentence of the following sentence, and higlight it with '~'." + sentence
     })
   };
 
